@@ -12,7 +12,7 @@ export const listPlayers = (players: Player[]): void => {
       if (player.tokenShown) {
         console.info(
           ` - ${player.name} (${formatPlayerStatus(player.status)}): ${
-            player.actualRole
+            player.actual_role
           } (Shown ${player.tokenShown})`
         );
         continue;
