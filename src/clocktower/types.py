@@ -20,6 +20,10 @@ class Role:
 	bluffing_tips: Optional[List[str]] = None
 	examples: Optional[List[str]] = None
 
+	@classmethod
+	def from_dict(cls, data):
+		return cls(**data)
+
 
 @dataclass
 class Player:
